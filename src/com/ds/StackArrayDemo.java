@@ -15,6 +15,7 @@ public class StackArrayDemo {
 		while (!st.isEmpty()) {
 			System.out.println(st.pop());
 		}
+		
 	}
 
 }
