@@ -4,7 +4,7 @@ public class LinearSearch {
 
 	public static void main(String[] args) {
 		DataSet data = new DataSet(1000000);
-		int search = 979799998;
+		int search = 979798;
 		Boolean isFound = false;
 		
 		for(int i=0; i<data.getSize(); i++){
