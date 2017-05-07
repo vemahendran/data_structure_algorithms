@@ -10,11 +10,11 @@ public class BinarySearch {
 
 		int low = 0;
 		int mid = 0;
-		int high = dataSet.getSize();
+		int high = dataSet.getSize() - 1;
 
 		while (!isFound) {
 			dataSet.numberTry++;
-			if (low >= high) {
+			if (low > high) {
 				System.out.println("The number doesn't exist.");
 				break;
 			}
