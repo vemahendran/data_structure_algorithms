@@ -55,3 +55,6 @@ allConstruct('', [cat, dog, mouse])
 [[]]
 ```
 
+### The solution
+
+[all-construct.js](all-construct.js)
