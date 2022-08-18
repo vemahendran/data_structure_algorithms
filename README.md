@@ -1,6 +1,6 @@
 # Data Structure and Algorithms
 
-Algorithms implemented in Java and JavaScript. As of now, you can find only Java implementation. JavaScript is on the way.. 😀 😂
+Algorithms implemented in Java and JavaScript. As of now, you can find only Java implementation. JavaScript is on the way.. :)
 
 ### One dimensional array
 [OneDAarray.java](./src/com/ds/OneDAarray.java)
