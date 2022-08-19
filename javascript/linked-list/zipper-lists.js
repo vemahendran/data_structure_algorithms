@@ -68,3 +68,22 @@ const test01 = (() => {
 
     print(zipperLists(a, x)); // a -> x -> b -> y -> c -> z
 })();
+
+const test02 = (() => {
+    const a = new Node(5);
+    const b = new Node(10);
+    const c = new Node(15);
+    a.next = b;
+    b.next = c;
+    // 5 -> 10 -> 15
+
+    const x = new Node(2);
+    const y = new Node(3);
+    const z = new Node(20);
+    x.next = y;
+    y.next = z;
+    // 2 -> 3 -> 20
+
+    print(zipperLists(a, x)); //5 -> 2 -> 10 -> 3 -> 15 -> 20
+    // 2 -> 3 -> 5 -> 10 -> 15 -> 20
+})();
