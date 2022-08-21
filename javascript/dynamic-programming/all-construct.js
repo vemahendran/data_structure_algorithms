@@ -1,5 +1,25 @@
+const allConstruct = (target, wordBank) => {
+    let table = Array(target.length + 1)
+        .fill()
+        .map(() => []);
+    table[0] = [[]];
 
-const allConstruct = (target, wordBank, memo = {}) => {
+    for (let i = 0; i <= target.length; i++) {
+        if (table[i].length > 0) {
+            for (const word of wordBank) {
+                if (target.slice(i, i + word.length) === word) {
+                    const newCombination = table[i].map(subArray => [...subArray, word]);
+                    table[i + word.length].push(...newCombination);
+                }
+            }
+        }
+    }
+
+    return table[target.length];
+}
+
+
+const allConstructR = (target, wordBank, memo = {}) => {
 
     if (target in memo) {
         return memo[target];
